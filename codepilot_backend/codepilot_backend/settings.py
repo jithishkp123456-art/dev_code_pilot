@@ -38,9 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'account',
+    'answer',
     "assessments",
+    "submissions",
     'rest_framework',
-    'question'
+    'question',
 ]
 
 MIDDLEWARE = [
@@ -132,3 +134,5 @@ MAILERS = {
 
 
 AUTH_USER_MODEL = 'account.User'
+
+AUTHETICATION_BACKENDS = ['django.contrib.auth.backends.BaseBackend','account.backends.EmailBackend','account.backends.PhoneBackend']
