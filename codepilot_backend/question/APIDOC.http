@@ -1,0 +1,15 @@
+# api call for list question
+
+### 
+GET http://127.0.0.1:8000/question/
+Accept: application/json
+Authorization: Token
+
+
+# api call for create question
+###
+POST http://127.0.0.1:8000/question/
+Content-Type: application/json
+Authorization: Token
+
+
